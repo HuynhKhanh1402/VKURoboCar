@@ -80,7 +80,7 @@ void loop() {
   lastTime = now;
 
   float error = readPositionError();
-  // distance = readUltrasonicDistance();
+  distance = readUltrasonicDistance();
 
   if (isPaused) {
     return;
