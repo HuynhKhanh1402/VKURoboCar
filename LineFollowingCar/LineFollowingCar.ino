@@ -73,11 +73,6 @@ void setup() {
 }
 
 void loop() {
-  delay(2000);
-  setMotor(0, 150);
-  delay(1000);
-  while (true) {}
-
   unsigned long now = millis();
   unsigned long dt_ms = now - lastTime;
   if (dt_ms < CONTROL_INTERVAL_MS) return;
